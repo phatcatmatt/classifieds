@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import ClassifiedListItemComponent from './components/classified-list-item-component';
+import ClassifiedListItem from './components/classified-list-item';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ClassifiedListItemComponent />
+        <ClassifiedListItem />
       </div>
     );
   }
