@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import ClassifiedListItem from './components/classified-list-item';
 import './App.css';
+import ForSaleContainer from './containers/ForSaleContainer';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ClassifiedListItem />
+        <ForSaleContainer />
       </div>
     );
   }
