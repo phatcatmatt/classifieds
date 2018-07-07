@@ -11,12 +11,10 @@ const client = new ApolloClient({
   uri: config.listingsAPI,
 })
 
-const ApolloApp = () => (
+ReactDOM.render(
   <ApolloProvider client={client}>
     <App />
-  </ApolloProvider>
-)
+  </ApolloProvider>, 
+  document.getElementById('root'));
 
-
-ReactDOM.render(<ApolloApp />, document.getElementById('root'));
 registerServiceWorker();

@@ -21,10 +21,24 @@ const ForSaleContainer = (props) => {
         if (loading) return <p>loading...</p>;
         if (error) return <p>error loading listings</p>
         
-        return data.allListings.map(listing => <ClassifiedListItem key={listing.id} {...listing} />) 
+        return renderListings(data.allListings);
+        
       }}
     </Query>
   )
+}
+
+const renderListings = (listings) => {
+    return (
+      <ol>
+        {listings.map(listing => {
+          return (
+            <ClassifiedListItem key={listing.id} {...listing} />
+          )
+        })} 
+      </ol>
+
+    ) 
 }
 
 export default ForSaleContainer;
