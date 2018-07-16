@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // UI
-import './classified-list-item.css';
+import './ClassifiedListItem.css';
 
 class ClassifiedListItem extends Component {
   render() {

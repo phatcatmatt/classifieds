@@ -1,7 +1,7 @@
 import React from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
-import ClassifiedListItem from '../components/classified-list-item';
+import ClassifiedListItem from '../components/ClassifiedListItem';
 
 const ForSaleContainer = (props) => {
 
