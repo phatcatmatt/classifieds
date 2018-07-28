@@ -27,7 +27,7 @@ class NewListingForm extends Component {
           <form
             onSubmit={e => {
               e.preventDefault();
-              addListing({ variables: { title: this.state.title, price: parseInt(this.state.price)}})
+              addListing({ variables: { title: this.state.title, price: parseFloat(this.state.price, 10)}})
             }}
           >
             <label htmlFor="titleInput">Title:</label>
